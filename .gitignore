@@ -1,0 +1,9 @@
+.venv/
+.codex_tmp/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
+data/external/faceshape_source/.git/

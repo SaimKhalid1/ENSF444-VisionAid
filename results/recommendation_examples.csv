@@ -1,0 +1,16 @@
+image_path,actual_face_shape,predicted_face_shape,recommended_frame_1,recommended_frame_2,recommended_frame_3,recommendation_rationale
+data/external/faceshape_source/published_dataset/oval/img_no_201.jpg,oval,oval,rectangular,square,aviator,"Oval faces are versatile, so structured frames usually preserve facial balance."
+data/external/faceshape_source/published_dataset/round/img_no_324.jpg,round,round,rectangular,square,cat-eye,Angular frames usually add contrast to rounder facial contours.
+data/external/faceshape_source/published_dataset/oblong/img_no_196.jpg,oblong,oblong,square,aviator,cat-eye,Longer faces usually benefit from frames that add width and visual depth.
+data/external/faceshape_source/published_dataset/square/img_no_455.jpg,square,heart,round,aviator,cat-eye,Heart-shaped faces often balance well with softer or bottom-heavy frames.
+data/external/faceshape_source/published_dataset/oblong/img_no_198.jpg,oblong,oblong,square,aviator,cat-eye,Longer faces usually benefit from frames that add width and visual depth.
+data/external/faceshape_source/published_dataset/oval/img_no_291.jpg,oval,heart,round,aviator,cat-eye,Heart-shaped faces often balance well with softer or bottom-heavy frames.
+data/external/faceshape_source/published_dataset/oblong/img_no_123.jpg,oblong,heart,round,aviator,cat-eye,Heart-shaped faces often balance well with softer or bottom-heavy frames.
+data/external/faceshape_source/published_dataset/round/img_no_318.jpg,round,round,rectangular,square,cat-eye,Angular frames usually add contrast to rounder facial contours.
+data/external/faceshape_source/published_dataset/heart/img_no_64.jpg,heart,heart,round,aviator,cat-eye,Heart-shaped faces often balance well with softer or bottom-heavy frames.
+data/external/faceshape_source/published_dataset/square/img_no_458.jpg,square,square,round,aviator,cat-eye,Softer curves can offset a stronger jawline and broad forehead.
+data/external/faceshape_source/published_dataset/heart/img_no_28.jpg,heart,heart,round,aviator,cat-eye,Heart-shaped faces often balance well with softer or bottom-heavy frames.
+data/external/faceshape_source/published_dataset/oblong/img_no_107.jpg,oblong,oblong,square,aviator,cat-eye,Longer faces usually benefit from frames that add width and visual depth.
+data/external/faceshape_source/published_dataset/square/img_no_447.jpg,square,square,round,aviator,cat-eye,Softer curves can offset a stronger jawline and broad forehead.
+data/external/faceshape_source/published_dataset/round/img_no_308.jpg,round,round,rectangular,square,cat-eye,Angular frames usually add contrast to rounder facial contours.
+data/external/faceshape_source/published_dataset/heart/img_no_74.jpg,heart,oval,rectangular,square,aviator,"Oval faces are versatile, so structured frames usually preserve facial balance."

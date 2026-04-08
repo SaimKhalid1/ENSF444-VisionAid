@@ -1,0 +1,6 @@
+{
+  "dataset_size_after_feature_extraction": 493,
+  "dropped_images": 7,
+  "best_model": "logistic_regression",
+  "best_model_test_accuracy": 0.6262626262626263
+}

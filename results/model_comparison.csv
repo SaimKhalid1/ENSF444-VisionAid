@@ -1,0 +1,5 @@
+model,best_cv_accuracy,test_accuracy,test_precision_weighted,test_recall_weighted,test_f1_weighted,best_params
+logistic_regression,0.5990912041544953,0.6262626262626263,0.6262829389519633,0.6262626262626263,0.6236533391116156,"{""model__C"": 1.0, ""model__class_weight"": ""balanced""}"
+random_forest,0.5509899383317105,0.6060606060606061,0.6158156000053234,0.6060606060606061,0.6026936026936026,"{""model__max_depth"": null, ""model__min_samples_leaf"": 4, ""model__n_estimators"": 400}"
+mlp_classifier,0.5509250243427458,0.5959595959595959,0.5970819304152637,0.5959595959595959,0.5947401904923203,"{""model__alpha"": 0.001, ""model__hidden_layer_sizes"": [128, 64]}"
+knn,0.46955533917559233,0.47474747474747475,0.4786789631011905,0.47474747474747475,0.4742139543614302,"{""model__n_neighbors"": 9, ""model__p"": 1, ""model__weights"": ""distance""}"
