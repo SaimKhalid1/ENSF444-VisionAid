@@ -1,7 +1,36 @@
-numpy
-pandas
-scikit-learn
-matplotlib
-seaborn
-opencv-contrib-python-headless
+# VisionAid project dependencies
+# --------------------------------
+# Install all dependencies into a virtual environment with:
+#
+#   python -m venv .venv
+#   .venv\Scripts\activate          # Windows
+#   source .venv/bin/activate       # macOS / Linux
+#   pip install -r requirements.txt
+#
+# After installation, run the full pipeline with:
+#   python run_project.py --force-features
+#
+# If the landmark feature CSV already exists (data/processed/landmark_features.csv),
+# you can skip re-extraction and jump straight to model training:
+#   python run_project.py
 
+# Core numerical and data libraries
+numpy>=1.24
+pandas>=2.0
+
+# Machine learning
+scikit-learn>=1.3
+
+# Plotting
+matplotlib>=3.7
+seaborn>=0.12
+
+# Computer vision — landmark extraction requires the "contrib" build
+# (provides cv2.face.createFacemarkLBF)
+opencv-contrib-python-headless>=4.8
+
+# Model serialization
+joblib>=1.3
+
+# Jupyter notebooks (optional — only needed to open the notebooks/ directory)
+jupyter>=1.0
