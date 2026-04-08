@@ -1,9 +1,34 @@
-.venv/
-.codex_tmp/
+# Python bytecode
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Temporary and build artifacts
+.codex_tmp/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# OS artifacts
 .DS_Store
 Thumbs.db
+
+# Editor config (not part of submission)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# External dataset git history (the images folder is checked in, its .git is not)
 data/external/faceshape_source/.git/
