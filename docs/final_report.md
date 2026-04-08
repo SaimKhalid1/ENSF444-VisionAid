@@ -170,9 +170,49 @@ Several ethical issues matter for a system like this:
 - **Privacy:** Selfie-based recommendation systems process facial data, which is sensitive biometric information.
 - **Overconfidence risk:** A client-facing product should present confidence estimates and allow the user to override the recommendation.
 
-## 11. Conclusion
+## 11. Code Structure and Reproducibility
+
+The project is organized as an installable Python package under `src/visionaid/`:
+
+| Module | Purpose |
+| --- | --- |
+| `pipeline.py` | `FaceShapeExperiment` class — orchestrates all pipeline stages |
+| `recommendation.py` | Face-shape-to-frame recommendation rules |
+| `data_loader.py` | Utility functions for loading and inspecting the feature CSV |
+
+**Running the full pipeline:**
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Download the dataset
+git clone https://github.com/dsmlr/faceshape data/external/faceshape_source
+
+# Run feature extraction + model training
+python run_project.py --force-features
+```
+
+If the feature CSV already exists, feature extraction can be skipped:
+
+```bash
+python run_project.py
+```
+
+**Interactive notebooks** are available for step-by-step exploration:
+
+- `notebooks/01_exploratory_data_analysis.ipynb` — class distribution, PCA, geometry correlations
+- `notebooks/02_model_training_and_evaluation.ipynb` — GridSearchCV training, confusion matrices, recommendations
+
+Launch with: `jupyter notebook notebooks/`
+
+All output artifacts are written to `results/` (plots, metrics, recommendations) and `models/` (serialized model files).
+
+## 12. Conclusion
 
 This project demonstrates that a classical machine learning workflow can use facial landmarks and geometric ratios to produce useful face-shape predictions and then convert those predictions into eyewear recommendations.
 
-The final pipeline is reproducible, documented, and aligned with the original VisionAid client story. Although the final dataset had to change because the proposal link no longer matched the intended source, the finished system still reflects the original project goal: using machine learning to support personalized eyewear recommendations from face images.
+The final pipeline is fully reproducible, thoroughly documented, and aligned with the original VisionAid client story. Although the dataset had to change because the proposal link resolved to an unrelated source, the finished system reflects the original project goal: using machine learning to support personalized eyewear recommendations from face images.
+
+The code is organized into well-documented modules with inline comments explaining each step, a `data_loader` utility for easy dataset access, and two Jupyter notebooks that walk through the analysis interactively. This structure makes the project straightforward to reproduce, extend, or present.
 
