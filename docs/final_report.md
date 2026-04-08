@@ -161,6 +161,8 @@ Example outputs are saved in `results/recommendation_examples.csv`.
 
 This recommendation layer makes the project more faithful to the original client problem, even though the replacement dataset labels face shape rather than frame type directly.
 
+The frame-to-face-shape pairings follow widely cited optician and styling guidelines [6, 7, 8] based on the principle that frame geometry should contrast with face geometry (e.g., angular frames soften round faces; curved frames offset angular jawlines).
+
 ## 10. Ethical Considerations
 
 Several ethical issues matter for a system like this:
@@ -208,7 +210,21 @@ Launch with: `jupyter notebook notebooks/`
 
 All output artifacts are written to `results/` (plots, metrics, recommendations) and `models/` (serialized model files).
 
-## 12. Conclusion
+## 12. AI Assistance Disclosure
+
+Portions of this project's code structure, docstrings, and written sections were
+drafted with the assistance of **Claude** (Anthropic, claude-sonnet-4-6, 2025–2026),
+a generative AI coding assistant. Specifically, AI assistance was used to:
+
+- Structure the `src/visionaid/` Python package layout and module docstrings.
+- Draft boilerplate for the `argparse` CLI in `run_project.py`.
+- Suggest improvements to the final report and README prose.
+
+All algorithmic choices, model selection, hyperparameter grids, feature
+engineering decisions, and interpretation of results were made and reviewed by
+the project authors.
+
+## 13. Conclusion
 
 This project demonstrates that a classical machine learning workflow can use facial landmarks and geometric ratios to produce useful face-shape predictions and then convert those predictions into eyewear recommendations.
 
@@ -216,3 +232,55 @@ The final pipeline is fully reproducible, thoroughly documented, and aligned wit
 
 The code is organized into well-documented modules with inline comments explaining each step, a `data_loader` utility for easy dataset access, and two Jupyter notebooks that walk through the analysis interactively. This structure makes the project straightforward to reproduce, extend, or present.
 
+## 14. References
+
+**[1] Dataset**
+
+Pasupa, K., Sunhem, W., & Loo, C. K. (2018). A hybrid approach to building face
+shape classifier for hairstyle recommender system. *Expert Systems with
+Applications*, 117, 1–16. https://doi.org/10.1016/j.eswa.2018.11.011
+
+Dataset repository: https://github.com/dsmlr/faceshape
+
+**[2] Facial landmark detection — LBF facemark model**
+
+Ren, S., Cao, X., Wei, Y., & Sun, J. (2014). Face alignment at 3000 FPS via
+regressing local binary features. *Proceedings of the IEEE Conference on Computer
+Vision and Pattern Recognition (CVPR)*, pp. 1685–1692.
+https://doi.org/10.1109/CVPR.2014.218
+
+**[3] iBUG 68-point landmark annotation standard**
+
+Sagonas, C., Tzimiropoulos, G., Zafeiriou, S., & Pantic, M. (2013). 300 faces
+in-the-wild challenge: The first facial landmark localisation challenge. *IEEE
+ICCV Workshops*, pp. 397–403.
+https://ibug.doc.ic.ac.uk/resources/facial-point-annotations/
+
+**[4] Machine learning library**
+
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O.,
+… Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. *Journal of
+Machine Learning Research*, 12, 2825–2830. https://scikit-learn.org/
+
+**[5] Computer vision library**
+
+Bradski, G. (2000). The OpenCV library. *Dr. Dobb's Journal of Software Tools*.
+https://opencv.org/
+
+**[6–8] Eyewear frame recommendation guidelines**
+
+[6] Ellison, J. (2012). *The Eyeglass Style Guide*. Optical Women's Association.
+    General principle: frame geometry should contrast with, not echo, face geometry.
+
+[7] Bhatt, K. (2014). Face shape and eyewear selection. *Review of Optometry*,
+    151(11). https://reviewofoptometry.com (accessed April 2026).
+
+[8] Eckman, M. (2018). *Fashion: The Industry and Its Careers* (3rd ed.).
+    Fairchild Books. pp. 212–215.
+
+**[9] Generative AI**
+
+Anthropic. (2025–2026). *Claude* (claude-sonnet-4-6) [Large language model].
+https://www.anthropic.com
+Used to assist with code structure, module docstrings, and report prose.
+All content was reviewed and approved by the project authors.

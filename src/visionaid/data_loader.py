@@ -178,7 +178,8 @@ def get_landmark_columns(df: pd.DataFrame) -> list[str]:
 
     There are 68 landmarks × 2 coordinates (x, y) = 136 columns in total.
     Landmark numbering follows the standard 68-point iBUG convention used by
-    the OpenCV LBF facemark model.
+    the OpenCV LBF facemark model. See:
+    https://ibug.doc.ic.ac.uk/resources/facial-point-annotations/
 
     Parameters
     ----------

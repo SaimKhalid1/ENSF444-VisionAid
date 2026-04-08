@@ -344,6 +344,29 @@ class FaceShapeExperiment:
         * Points 36–47: eye corners and lids
         * Points 48–67: outer and inner lip contour
 
+        References
+        ----------
+        iBUG 68-point facial landmark annotation standard:
+            Sagonas, C., Tzimiropoulos, G., Zafeiriou, S., & Pantic, M. (2013).
+            300 faces in-the-wild challenge: The first facial landmark
+            localisation challenge. *ICCV Workshops*. IEEE.
+            https://ibug.doc.ic.ac.uk/resources/facial-point-annotations/
+
+        LBF facemark model used to fit these landmarks:
+            Ren, S., Cao, X., Wei, Y., & Sun, J. (2014). Face alignment at
+            3000 FPS via regressing local binary features. *CVPR*, pp. 1685–1692.
+            https://doi.org/10.1109/CVPR.2014.218
+
+        The 16 geometry ratio features are hand-designed to capture the facial
+        proportions that opticians use to categorise face shapes (jaw-to-face
+        width, cheekbone ratios, forehead width, chin-to-jaw ratio, jaw angle).
+        Feature design is informed by the same optician guidelines cited in
+        ``recommendation.py`` and by the methodology in:
+            Pasupa, K., Sunhem, W., & Loo, C. K. (2018). A hybrid approach to
+            building face shape classifier for hairstyle recommender system.
+            *Expert Systems with Applications*, 117, 1–16.
+            https://doi.org/10.1016/j.eswa.2018.11.011
+
         Parameters
         ----------
         points:

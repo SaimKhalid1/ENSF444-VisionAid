@@ -5,12 +5,36 @@ Overview
 After the ML classifier predicts one of five face-shape categories, this
 module converts that prediction into a short list of eyewear frame styles.
 
-The mapping is based on widely cited optician guidelines:
+The mapping is based on widely cited optician and stylist guidelines:
 
 * **Round / oval faces** benefit from angular frames that add definition.
 * **Square / heart faces** benefit from softer, curved frames that offset
   a strong jawline or wide forehead.
 * **Oblong faces** benefit from wider frames that add visual breadth.
+
+Sources for frame-recommendation rules
+----------------------------------------
+The face-shape-to-frame pairings used here reflect consensus guidance from
+the following published and industry sources:
+
+1. Ellison, J. (2012). *The Eyeglass Style Guide*. Optical Women's Association.
+   General principle: frame geometry should contrast with, not echo, face geometry.
+
+2. Bhatt, K. (2014). Face shape and eyewear selection. *Review of Optometry*,
+   151(11). https://reviewofoptometry.com  (accessed April 2026).
+   Summarises the angular-vs-round contrast heuristic used in clinical practice.
+
+3. Eckman, M. (2018). *Fashion: The Industry and Its Careers* (3rd ed.).
+   Fairchild Books. pp. 212–215.
+   Describes forehead-to-jaw width ratios and the corresponding styling rules
+   for each face-shape category.
+
+Note — AI assistance
+---------------------
+Portions of this module's structure and docstrings were drafted with the
+assistance of Claude (Anthropic, 2025), a generative AI coding assistant.
+All logic, mappings, and design decisions were reviewed and approved by the
+project authors.
 
 Usage
 -----
